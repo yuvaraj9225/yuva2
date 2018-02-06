@@ -15,3 +15,4 @@ void main()
 
     printf("power for %d^%d=%d",base,exponent,power);
 }
+
