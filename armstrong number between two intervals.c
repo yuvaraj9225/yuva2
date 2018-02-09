@@ -1,11 +1,13 @@
 #include <stdio.h>
-int main()
+void main()
 {
-  int n1, n2, i, temp, num, rem;
-  printf("Enter two numbers(intervals): ");
-  scanf("%d %d", &n1, &n2);
-  printf("Armstrong numbers between %d an %d are: ", n1, n2);
-  for(i=n1+1; i<n2; ++i)
+  int a,b, i, temp, num, rem;
+  printf("Enter first interval:");
+  scanf("%d",&a);
+  printf("Enter the second interval:");
+  scanf("%d",&b);
+  printf("Armstrong numbers between %d and %d: ", a, b);
+  for(i=a+1; i<b; ++i)
   {
       temp=i;
       num=0;
@@ -20,7 +22,5 @@ int main()
           printf("%d ",i);
       }
   }
-  return 0;
- 
 }
  
